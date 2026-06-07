@@ -1,31 +1,117 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
+.cosmic-bg {
   min-height: 100vh;
+  background: radial-gradient(circle at top, #1b2b4f 0%, #05060b 45%, #000000 100%);
+  color: #f5f5f5;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 2rem 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.layout-shell {
+  width: 100%;
+  max-width: 1200px;
 }
 
-.heart {
-  color: #ff0000;
+.hec-header {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.small {
-  font-size: 0.75rem;
+.hec-header h1 {
+  letter-spacing: 0.18em;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #9fd5ff;
+}
+
+.hec-subtitle {
+  margin-top: 0.75rem;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.hec-section {
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #c7e6ff;
+  margin-bottom: 1rem;
+}
+
+/* Canon grid */
+
+.canon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.archetype-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(159, 213, 255, 0.25);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+}
+
+.archetype-name {
+  font-size: 1rem;
+  margin: 0 0 0.25rem;
+  color: #ffffff;
+}
+
+.archetype-realm {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #9fd5ff;
+  margin: 0 0 0.5rem;
+}
+
+.archetype-question {
+  font-size: 0.9rem;
+  color: #e3f2ff;
+}
+
+/* Stack section */
+
+.stack-section {
+  margin-top: 1rem;
+}
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.stack-card {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.stack-card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.stack-card p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #dbe9ff;
+}
+
+/* Footer */
+
+.hec-footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #9fa8c3;
 }
